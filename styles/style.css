@@ -1,0 +1,125 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--primaryColor);
+}
+header, footer{
+    background-color: var(--primaryColor);
+}
+h1{
+    font-weight: 100;
+    text-align: center;
+    color: var(--lightColor);
+    margin-bottom: .5rem;
+}
+main{
+    background-color: var(--lightColor);
+}
+h2{
+    width: fit-content;
+    font-weight: 100;
+    color: var(--darkColor);
+    margin: 0 auto 2rem;
+}
+h2::after{
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: var(--darkColor);
+    transition: .3s;
+}
+h2:hover::after{
+    width: 100%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.text-container{
+    width: 100%;
+}
+section p{
+    margin-bottom: 1rem;
+}
+span{
+    font-weight: 600;
+}
+figure{
+    width: 100%;
+}
+.dec-line{
+    border-bottom: 2px solid var(--darkColor);
+}
+#main-picture{
+    height: 300px;
+    margin: 0 auto 2rem;
+}
+#main-picture img{
+    object-position: 0 85%;
+}
+#flex{
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+}
+#flex div{
+    width: 300px;
+}
+h3{
+    margin-bottom: .5rem;
+}
+h4{
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+ul, ol{
+    margin-bottom: 2rem;
+}
+ol li{
+    list-style: decimal;
+    list-style-position: inside;
+}
+li{
+    line-height: 1.5;
+}
+footer p{
+    text-align: center;
+    color: var(--lightColor);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    h1{
+        font-size: 2.5rem !important;
+    }
+    h2{
+        font-size: 2rem !important;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .grid-container figure{
+        height: 300px;
+    }
+    .grid-container figure img{
+        object-position: 0 80%;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-container div{
+        margin: 0 auto;
+    }
+}
