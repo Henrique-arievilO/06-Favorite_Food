@@ -18,3 +18,10 @@ Nele tive a oportunidade de praticar:</i>
 - Variáveis CSS
 - Multi seletores
 - Classes utilitárias
+<br><br>
+<div align="center">
+  <img src="./assets/image/desktop.png" width="500px">
+  <img src="./assets/image/tablet.png" width="210px" margin-left="20px" margin-right="20px" border="solid 1px black">
+  <img src="./assets/image/mobile.png" width="145px">
+</div>
+<br>
