@@ -88,6 +88,9 @@ ol li{
 li{
     line-height: 1.5;
 }
+.simple-container p{
+    text-align: center;
+}
 footer p{
     text-align: center;
     color: var(--lightColor);
